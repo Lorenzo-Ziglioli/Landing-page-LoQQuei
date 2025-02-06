@@ -325,3 +325,8 @@ input{
 .checkbox{
     width: 0;
 }
+
+.icn{
+    width: 10px;
+    height: 10px;
+}

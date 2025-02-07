@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/css/style.css">
     <title>LoQQuei</title>
-    <link rel="icon" type="icon" href="/src/img/Property 1=Dark Mode.png" class="icn">
+    <link rel="icon" type="icon" href="/src/img/logo2.png" class="icn">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
     </style>
 </head>
 <header class="header">
-    <div class="logo"><img src="./src/img/Logo.svg" alt="Logo da LoQQuei"></div>
+    <div><img class="logo" src="./src/img/Logo.svg" alt="Logo da LoQQuei"></div>
     <div class="contact-button"><a href="#">FALE CONOSCO</a></div>
 </header>
 
@@ -154,8 +154,6 @@
             </div>
         </div>
     </section>
-    <section class="main-section">
-    </section>
     <section class="contact-section">
         <div class="contact-text">
             <div class="empty">
@@ -165,9 +163,62 @@
                     simples, segura e econômica.</p>
             </div>
         </div>
+        <div class="empty">
+            <div class="form-container">
+                <input type="text" placeholder="Insira seu nome">
+                <input type="email" placeholder="Insira seu e-mail">
+                <input type="tel" name="tel" maxlength="15" OnKeyPress="formatar('(##) #####-####',this)"
+                    placeholder="Insira o telefone">
+                <div class="checkbox-container">
+                    <div class="checkbox">
+                        <input type="checkbox" id="chk1" class="checkbox" name="chk">
+                        <label for="chk1">
+                        </label>
+                    </div>
+                    <label for="promo">Eu concordo em receber conteúdo promocional relacionado aos produtos e serviços
+                        da
+                        LoQQuei.</label>
+                </div>
+                <button class="learn-more-button">ENVIAR</button>
+            </div>
         </div>
     </section>
 
+    <footer class="container-footer">
+        <section class="contact-section">
+            <div>
+                <img class="logo2" src="./src/img/Logo (1).png" alt="">
+            </div>
+            <div class="endereco">
+                <p class="info">Rua Independência, n° 1011<br>
+                    Centro<br>
+                    Xanxerê, Santa Catarina</p><br>
+                <div class="phone">
+                    <p class="info">
+                        (49) 3433.5888
+                    </p>
+                </div>
+            </div>
+        </section>
+        <div class="empty2">
+            <p>
+                © Todos os direitos reservados à LoQQuei
+            </p>
+        </div>
+    </footer>
 </body>
+
+<script>
+    function formatar(mascara, documento) {
+        let i = documento.value.length;
+        let saida = '#';
+        let texto = mascara.substring(i);
+        while (texto.substring(0, 1) != saida && texto.length) {
+            documento.value += texto.substring(0, 1);
+            i++;
+            texto = mascara.substring(i);
+        }
+    }
+</script>
 
 </html>

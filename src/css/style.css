@@ -282,7 +282,7 @@ hr {
 
 }
 .empty2 {
-    padding: 0 4vw 4vw 4vw;
+    padding: 0 2vw 2vw 2vw;
     text-align: center;
 }
 
@@ -471,5 +471,5 @@ input.checkbox {
   }
   h2{
     font-size: 2.5vw;
-    margin-bottom: 2vw;
+    margin-bottom: 1.08vw;
   }

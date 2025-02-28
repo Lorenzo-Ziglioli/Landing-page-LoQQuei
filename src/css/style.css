@@ -48,7 +48,6 @@ header {
 
 .contact-button:hover {
     border: 0.14vw solid #FF4306;
-    font-size: 1.042vw;
 }
 
 .intro-section {
@@ -89,13 +88,13 @@ header {
     text-align: center;
 }
 
-.video-placeholder {
-    height: 70vw;
-    background-image: url(/src/img/PtbGQ\ \(2\)\ 1.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
+.gif {
+    width: 100%;
+    height: auto;  /* Mantém a proporção */
+    display: block; /* Remove espaços extras abaixo da imagem */
+    margin: 0 auto; /* Centraliza na tela */
 }
+
 
 .about-section {
     display: flex;
@@ -153,7 +152,8 @@ header {
 }
 
 .service-title {
-    font-size: 1.146vw;
+    font-size: 1.246vw;
+    color: #FF4306;
 }
 
 .service-description {
@@ -253,8 +253,12 @@ hr {
 }
 
 .additional-service-title {
+    display: flex;
     color: #161616;
     font-size: 2.083vw;
+    font-weight: 700;
+    align-items: center;
+
 }
 
 .additional-services-container {
@@ -353,9 +357,9 @@ input {
     height: 1.896vw;
     padding: 0.521vw;
     margin: 0.521vw 0;
-    border-radius: 20px;
+    border-radius: 1.3vw;
     outline: none;
-    font-size: 0.729vw;
+    font-size: 1vw;
     border: 0.14vw  solid #000000;
     color: #161616;
     transition: 300ms;
@@ -419,15 +423,16 @@ input.checkbox {
     vertical-align: middle;
     height: 1.5em;
     width: 1.5em;
-    background: #FFF;
+    background: #161616;
     margin-right: 0.5em;
-    border: 0.07vw  solid #999;
+    border: 0.1vw  solid #ff4306;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
     transition: all 0.2s ease;
     position: absolute;
     top: 50%;
     left: 0;
     transform: translate(0, -50%);
+    border-radius: 4px;
   }
   .checkbox label::after {
     content: "\2713";
@@ -441,7 +446,7 @@ input.checkbox {
     transition: all 0.2s ease;
   }
   .checkbox label:focus::before, .checkbox label:hover::before {
-    background: #ffdcd0;
+    background: #ff44066b;
   }
   .checkbox input:checked + label::before {
     background: #FF4306;
@@ -472,4 +477,7 @@ input.checkbox {
   h2{
     font-size: 2.5vw;
     margin-bottom: 1.08vw;
+  }
+  .box-addition{
+    width: 2.5vw;
   }

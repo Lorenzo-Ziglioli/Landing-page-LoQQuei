@@ -690,7 +690,7 @@
 
     .feature-circle:hover {
         border: 1px solid #000000;
-        scale: 1.15;
+        scale: 1.05;
     }
 
     .feature-title {
@@ -720,7 +720,7 @@
 
     .additional-service-box:hover {
         border: 1px solid #000000;
-        scale: 1.15;
+        scale: 1.05;
     }
 
     .additional-service-description {
@@ -773,6 +773,7 @@
         display: grid;
         gap: 32px;
         border: 1px solid #FF4306;
+        border-radius: 0 0 0 24px ;
         padding: 4vw;
     }
     .contact-description{
@@ -828,6 +829,6 @@
     }
     .service-box:hover {
         border: 0.14vw solid #ffffff;
-        scale: 1.15;
+        scale: 1.05;
     }
 }

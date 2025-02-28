@@ -12,7 +12,10 @@
     </style>
 </head>
 <header class="header">
-    <div><img class="logo" src="./src/img/Logo.svg" alt="Logo da LoQQuei"></div>
+    <div><img class="logo" src="./src/img/Logo.svg" alt="Logo da LoQQuei">
+        <img class="logo-mobile" src="./src/img/logo2.png" alt="Logo da LoQQuei">
+    </div>
+
     <div class="contact-button"><a href="#">FALE CONOSCO</a></div>
 </header>
 
@@ -35,9 +38,9 @@
                 </video>
             </div>
         </section>
-        <section class="about-section">
+        <section class="about-section" id="about-section">
             <div class="about-container">
-                <div class="image-card"><img src="/src/img/picture.png" alt="" class="about-image">
+                <div class="image-card"><img src="/src/img/picture.png" alt="Imagem de um grafismo" class="about-image">
                     <div class="about-info">
                         <h1 class="about-title">
                             Transforme sua infraestrutura de TI com simplicidade & inovação
@@ -60,36 +63,36 @@
                     <div class="service-title">
                         Locação de equipamentos de TI
                     </div>
-                    <div class="service-description">
-                        Equipamentos confiáveis e com a garantia de estar sempre atualizados, prontos para atender às
+                    <p class="service-description">Equipamentos confiáveis e com a garantia de estar sempre
+                        atualizados, prontos para atender às
                         demandas do seu negócio.
-                    </div>
+                    </p>
                 </div>
                 <div class="service-box service-2">
                     <div class="service-title">
                         Gestão inteligente via App
                     </div>
-                    <div class="service-description">
+                    <p class="service-description">
                         Através do nosso aplicativo, você tem total controle sobre seus ativos de TI. Realize
                         monitoramento em tempo real e gerencie o inventário de forma simples e eficiente.
-                    </div>
+                    </p>
                 </div>
                 <div class="service-box service-3">
                     <div class="service-title">
                         Suporte e consultoria
                     </div>
-                    <div class="service-description">
+                    <p class="service-description">
                         Além dos equipamentos, oferecemos suporte técnico especializado para que você nunca fique na
                         mão. Nossa equipe está pronta para ajudar a planejar as melhores soluções de TI para a sua
                         empresa.
-                    </div>
+                    </p>
                 </div>
             </div>
         </section>
     </section> <!-- section-all -->
     <section class="partners-section">
         <div class="partners-header">
-            <p class="partners-title">Vantagens de ser um parceiro </p> <img src="./src/img/Logo.png" alt=""
+            <p class="partners-title">Vantagens de ser um parceiro </p> <img src="./src/img/Logo.png" alt="logo"
                 class="partners-logo">
         </div>
         <div class="features-container">
@@ -125,7 +128,8 @@
         <div class="additional-services-container">
             <div class="additional-service-box additional-service-1">
                 <div class="additional-service-title">
-                    <img class="box-addition" src="./src/img/Acessibility.png" alt=""> Acessibilidade
+                    <img class="box-addition" src="./src/img/Acessibility.png" alt="imagem de acessibilidade">
+                    Acessibilidade
                 </div>
                 <div class="additional-service-description">
                     Democratizamos a tecnologia com soluções completas, viáveis e de fácil execução.
@@ -133,7 +137,7 @@
             </div>
             <div class="additional-service-box additional-service-2">
                 <div class="additional-service-title">
-                    <img class="box-addition" src="./src/img/Union.png" alt=""> Centralização
+                    <img class="box-addition" src="./src/img/Union.png" alt="Imagem de centralização"> Centralização
                 </div>
                 <div class="additional-service-description">
                     Uma plataforma única para o gerenciamento de todos os recursos de TI.
@@ -141,7 +145,7 @@
             </div>
             <div class="additional-service-box additional-service-3">
                 <div class="additional-service-title">
-                    <img class="box-addition" src="./src/img/Universal.png" alt=""> Customização
+                    <img class="box-addition" src="./src/img/Universal.png" alt="Imagem de custmomização"> Customização
                 </div>
                 <div class="additional-service-description">
                     Atendemos às necessidades específicas do cliente.
@@ -149,7 +153,7 @@
             </div>
             <div class="additional-service-box additional-service-3">
                 <div class="additional-service-title">
-                    <img class="box-addition" src="./src/img/Light Bulb.png" alt=""> Inovação
+                    <img class="box-addition" src="./src/img/Light Bulb.png" alt="Imagem de inovação"> Inovação
                 </div>
                 <div class="additional-service-description">
                     Produtos atualizados e prontos para acompanhar o futuro tecnológico das empresas.
@@ -161,7 +165,7 @@
         <div class="contact-text">
             <div class="empty">
                 <h2>Pronto para otimizar a gestão de TI do seu negócio?</h2>
-                <p>Fale com a gente e descubra como podemos transformar a infraestrutura tecnológica da sua empresa de
+                <p class="contact-description">Fale com a gente e descubra como podemos transformar a infraestrutura tecnológica da sua empresa de
                     forma
                     simples, segura e econômica.</p>
             </div>
@@ -190,7 +194,7 @@
     <footer class="container-footer">
         <section class="contact-section">
             <div>
-                <img class="logo2" src="./src/img/Logo (1).png" alt="">
+                <img class="logo2" src="./src/img/Logo (1).png" alt="Logo loqquei">
             </div>
             <div class="endereco">
                 <p class="info">Rua Independência, n° 1011<br>
@@ -204,7 +208,7 @@
             </div>
         </section>
         <div class="empty2">
-            <p class="service-description">
+            <p class="service-description-2">
                 © Todos os direitos reservados à LoQQuei
             </p>
         </div>
@@ -225,7 +229,7 @@
 
     document.getElementById("learn-more").addEventListener("click", function (event) {
         event.preventDefault(); // Previne o comportamento padrão do link
-        document.getElementById("services-section").scrollIntoView({
+        document.getElementById("about-section").scrollIntoView({
             behavior: "smooth",
             block: "center" // Centraliza verticalmente na tela
         });
